@@ -1,0 +1,31 @@
+카카오톡 시스템 디자인 메모
+
+1:1 채팅(정답 websocket)
+클라이언트와 서버는 어떻게 연결할까? 
+ 1. http => 클라이언트만 시작할수있음 A는 서버한테 http로 연결할수있지만 서버는 B한테 response를 못줌
+ 대안법
+ 2.polling -> 계속 물어봄, 간격은 정할수있음 , 리퀘스트 수 많아짐, 인프라스트럭처에 코스트가 높아짐
+ 3.long polling ->  서버가 기다리다가 타임아웃 정해놓고 리스폰스 던져줌 , polling보단 request가 덜하다
+ 4. websocket => open connection 유지 , 열려있는동안은 쌍방향 통신 가능
+
+message queue
+ex) kafka, rabiitMQ
+서비스들간에 데이터를 주고 받는 방법중에 하나
+왜쓰냐? decoupling -> 각각의 서비스는 Message Queue만 알면됨 publisher는 메세지큐에다가 던지기만 하면됨 디펜던시가 적어짐
+
+db(sql | NoSql)
+relational db
+- 트랙픽특성에 따른 db
+- 엄청난 양의 트래픽 그룹 채팅
+- 오래된 채팅 잘 안봄
+- 다른데이터들과 join할 필요없음
+- relational database 같은 경우에는 데이터가 많아지고 index가 많아지면 느려짐
+
+key value store
+- 스케일 하기 편함
+- read latency가 낮음
+- facebook같은 경우 hbase; 디스코드는 cassandra를 사용함
+- key를 만들때 range scan 하기 쉽게 디자인 해야함
+- 최근에 보낸 메시지 일수록 key 값이 높게
+
+
