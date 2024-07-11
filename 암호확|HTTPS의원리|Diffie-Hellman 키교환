@@ -1,0 +1,28 @@
+Https의 원리 | 암호확
+
+암호화
+1. Symmetric key Encryption (대칭 키 암호화) - AES 가 대표적으로 사용됨
+Encryption과 Decryption을 같은 key로 함
+
+2. Asymmetric Key Encryption (비대칭 키 암호화) - RSA가 대표적으로 사용됨
+Encryption과 Decryption을 다른 key로 함
+보내는사람과 받는 사람이 미리 key를 공유안해도됨
+
+3. Digital Signature (디지털 서명)
+ Asymmetric Key Encryption 활용
+ private key로 서명, public key로 확인
+ 
+ 4. Cryptographic Hasing (암호학적 해시)
+ 일반적인 hash와 개념적으로는 같음
+ digest 에서 원래 문서를 복구할수없음
+ digest을 ouput하는 다른 input을 찾을수없음
+ Digital signing할때 전체 내용을 sign하지 않고 전체 내용을 hash 한 다음에 digest를 서명하기도 함
+ sha-2 가 대표적으로 사용됨
+ 
+Https 동작 
+내컴퓨터 -> 네이버
+1. 내컴퓨터 : 네이버 홈페이지주세요
+2. 네이버 : 여기 내 certificate안 public key가 있어 certificate은 CA가 서명한거임. Certification Authority 는 검증되어있는 기관들 브라우저에 저장되어있음 예 구글
+3. 내컴퓨터 : certificate 서명 보고 public key encrypt.한 secret key 로 통화하자
+
+Diffie-Hellman key Exchange
