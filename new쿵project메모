@@ -13,6 +13,7 @@
 - front 단은 react 로 할지 아니면 typeleafe로 할지 간단한거니깐
 - 일단 웹으로 -> 반응형 되게끔 만들기
 - 등록되어있는 단어 추출 어디서 구해올지 찾아보기
+- 쿵 말고 상식문제나 나라 수도 맞추기 등등으로 우회?
   
   데이터 사이트 참고
   https://github.com/spellcheck-ko/korean-dict-nikl?tab=readme-ov-file
