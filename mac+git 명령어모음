@@ -55,3 +55,13 @@ git switch develop
 8. [local] local 작업 add . / commit -m “test-branch생성”
 9. test-branch -> develop 으로 push
 10. [local] git push origin test-branch:devleop
+
+
+git restore --staged .
+
+임시 저장소만들기(modify만 되기때문에 추가한 파일은 다 stage에 올려야한다.)
+git stash save "stash명"
+git stash list
+git stash apply [stash name]
+git stash pop -> stack 제일 높은거 pop 해서 apply + drop
+git stash show -p | git apply -R -> 실수로 stash apply한 것을 되돌리기 하기 위해 사용하는 명령어
