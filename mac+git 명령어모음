@@ -65,3 +65,19 @@ git stash list
 git stash apply [stash name]
 git stash pop -> stack 제일 높은거 pop 해서 apply + drop
 git stash show -p | git apply -R -> 실수로 stash apply한 것을 되돌리기 하기 위해 사용하는 명령어
+
+intellij 단축키
+1.shift shift : 전체 검색
+2.3 라인 첫/끝 이동
+mac : function + left/right
+win : Home, End
+
+2.4 라인 전체 선택
+mac : shift + cmd + left/ right
+6. 파일 검색
+mac : shift + cmd + o
+win : shfit + ctrl + n
+4. 코드 자동 정렬하기
+mac: cmd + option + L
+win: ctrl + alt + L
+
