@@ -81,3 +81,8 @@ win : shfit + ctrl + n
 mac: cmd + option + L
 win: ctrl + alt + L
 
+keyset change
+file 찾기 command shift o -> n 으로
+지우기 command d 로
+복붙 command 위아래로
+
