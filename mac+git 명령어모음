@@ -91,3 +91,9 @@ alt + ctrl + left right
 
 db 자동정렬
 ctrl alt l ? ctrl shift l
+
+오른쪽(|) split
+ctrl + command + -
+
+위아래 split
+ctrl + command + |
