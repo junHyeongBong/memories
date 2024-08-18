@@ -81,6 +81,9 @@ win : shfit + ctrl + n
 mac: cmd + option + L
 win: ctrl + alt + L
 
+5. 캡쳐
+command + shift + 3,4 : 전체캡쳐, 부분캡쳐
+
 keyset change
 file 찾기 command shift o -> n 으로
 지우기 command d 로
