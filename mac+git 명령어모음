@@ -10,6 +10,9 @@ Mac	sportlight	Command + spacebar
 캡쳐
 command + shift + 3,4 : 전체캡쳐, 부분캡쳐	
 
+스포티라이트
+command + spacebar
+
 
 깃 명령어
 
@@ -103,4 +106,21 @@ ctrl + command + -
 
 위아래 split
 ctrl + command + |
+
+파일제목 바꾸기
+shift + f6
+
+다중커서
+mac 
+option + option 누르고 커서위아래
+window
+ctrl + ctrl 누르고 커서위아래
+
+북마크설정
+window 
+ctrl shfit 123
+
+북마크이동
+window
+ctrl 1..2.3.
 
