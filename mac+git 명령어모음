@@ -19,6 +19,8 @@ command + spacebar
  명령어	정의	
 git init	해당 폴더내 깃 활성화	
 git remote add origin [원격 저장소(레파지토리) 주소	원격저장소와 로컬 저장소 연결	
+git remote set-url origin <변경할 원격 저장소 주소>   원격저장소 주소 변경
+git remote -v 	원격저장소 주소 확인
 git branch -a		
 git branch [브런치명]		
 git switch [브런치명]		
@@ -74,6 +76,22 @@ git stash show -p | git apply -R -> 실수로 stash apply한 것을 되돌리기
 
 git 한글파일명 깨짐 현상
 git config --global core.quotepath false
+
+git commit 메세지
+feat	새로운 기능 추가
+fix	버그 수정
+docs	문서 수정
+style	코드 스타일 변경 (코드 포매팅, 세미콜론 누락 등)
+기능 수정이 없는 경우
+design	사용자 UI 디자인 변경 (CSS 등)
+test	테스트 코드, 리팩토링 테스트 코드 추가
+refactor	코드 리팩토링
+build	빌드 파일 수정
+ci	CI 설정 파일 수정
+perf	성능 개선
+chore	빌드 업무 수정, 패키지 매니저 수정 (gitignore 수정 등)
+rename	파일 혹은 폴더명을 수정만 한 경우
+remove	파일을 삭제만 한 경우
 
 intellij 단축키
 1.shift shift : 전체 검색
