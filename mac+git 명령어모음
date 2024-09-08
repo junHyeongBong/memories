@@ -142,3 +142,16 @@ ctrl shfit 123
 window
 ctrl 1..2.3.
 
+
+mysql 실행법
+mysql.server start
+
+mysql -u root -p
+비밀번호
+
+exit
+mysql.server stop
+
+
+
+
