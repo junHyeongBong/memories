@@ -101,12 +101,18 @@ win : Home, End
 
 2.4 라인 전체 선택
 mac : shift + cmd + left/ right
-6. 파일 검색
-mac : shift + cmd + o
-win : shfit + ctrl + n
+
 4. 코드 자동 정렬하기
 mac: cmd + option + L
 win: ctrl + alt + L
+
+5. 한줄코드 지우기/복사
+mac: cmd + d (복사), cmd + backspace (한줄지우기)
+win: ctrl+방향키위아래(복사)  ctrl + d (한줄지우기)
+
+6. 파일 검색
+mac : shift + cmd + o
+win : shfit + ctrl + n
 
 keyset change
 file 찾기 command shift o -> n 으로
