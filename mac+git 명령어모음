@@ -8,10 +8,10 @@ Mac	sportlight	Command + spacebar
 	아예 꺼버리기	command + q
 	
 캡쳐
-command + shift + 3,4 : 전체캡쳐, 부분캡쳐	
+cmd + shift + 3,4 : 전체캡쳐, 부분캡쳐	
 
 스포티라이트
-command + spacebar
+cmd + spacebar
 
 
 깃 명령어
@@ -113,6 +113,10 @@ win: ctrl+방향키위아래(복사)  ctrl + d (한줄지우기)
 6. 파일 검색
 mac : shift + cmd + o
 win : shfit + ctrl + n
+
+7. 파일내에서 단어 찾기
+mac: shift + cmd + f
+win: shift + ctrl + f
 
 keyset change
 file 찾기 command shift o -> n 으로
